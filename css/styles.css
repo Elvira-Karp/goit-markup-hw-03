@@ -1,3 +1,5 @@
+/*-----------------------TEG-------------------------*/
+
 p, h1, h2, h3, h4, h5 {
     margin: 0;
 }
@@ -10,6 +12,7 @@ ul {
 button {
     cursor: pointer;
 }
+
 address {
     font-style: normal;
 }
@@ -35,10 +38,7 @@ color: #434455;
     outline: 2px solid red;
 }
 
-.header-nav {
-    display: flex;
-    margin-right: auto;
-}
+/*----------------------HEADER-------------------------*/
 
 .header {
     padding-top: 24px;
@@ -49,9 +49,25 @@ color: #434455;
     display: flex;
 }
 
+.header-nav {
+    display: flex;
+    margin-right: auto;
+}
+
 .haeder-logo {
-    margin-right: 76px;
-    margin-left: 156px;
+font-family: "Raleway", sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #4d5ae5;
+margin-right: 76px;
+margin-left: 156px;
+}
+
+.haeder-logo-log {
+    color: #2e2f42;
 }
 
 .header-list {
@@ -59,24 +75,6 @@ color: #434455;
     gap: 24px;
 }
 
-.address-list {
-    display: flex;
-    gap: 40px;
-}
-
-.haeder-logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-font-size: 18px;
-line-height: 1.17;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #4d5ae5;
-}
-
-.haeder-logo-log {
-    color: #2e2f42;
-}
 .header-link {
 font-weight: 500;
 font-size: 16px;
@@ -93,7 +91,13 @@ color: #2E2F42;
 .address {
     font-style: normal;
 }
-.address-address {
+
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
+.address-mail {
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -103,17 +107,55 @@ letter-spacing: 0.02em;
 color: #434455;
 }
 
+.address-tel {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
+}
 
-.address-address:hover,
-.address-address:focus {
+.address-mail:hover,
+.address-mail:focus {
     color: #404bbf;
 }
 
-.slogan {
+.address-tel:hover,
+.address-tel:focus {
+    color: #404bbf;
+}
+
+/*-----------------------HERO-------------------------*/
+
+.hero {
+    background-color: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
+    margin: 0 auto;
 }
-.slogan-btn {
+
+.hero-container {
+   margin: 0 auto;
+}
+
+.hero-name {
+width: 496px;
+margin: 0 auto;
+padding-bottom: 48px;
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+
+.btn {
+width: 169px;
+height: 56px;
+margin: 0 auto;
 font-family: inherit;
 font-weight: 500;
 font-size: 16px;
@@ -127,18 +169,8 @@ background: #4D5AE5;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 }
-.slogan {
-    background-color: #2e2f42;
-}
-.slogan-name {
-    width: 496px;
-font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
-text-align: center;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-}
+
+/*-----------------------DESC-------------------------*/
 
 .desc {
     padding-top: 120px;
@@ -151,6 +183,7 @@ color: #FFFFFF;
 }
 
 .desc-subtitle {
+    margin-bottom: 8px;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.20;
@@ -165,14 +198,14 @@ letter-spacing: 0.02em;
 color: #434455;
  }
 
+/*-----------------------FEATURES-------------------------*/
+
  .features{
     padding-bottom: 120px;
  }
- .features-list {
-    display: flex;
-    gap: 24px;
- }
-.features-name {
+
+ .features-name {
+margin-bottom: 72px;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -182,29 +215,38 @@ text-transform: capitalize;
 color: #2E2F42;
 }
 
-.information {
+ .features-list {
+display: flex;
+gap: 24px;
 }
-.information-item {
-    gap: calc(100% - 72px) 4;
+
+/*---------------------INFORMATION----------------------*/
+
+.information-name {
+padding-top: 120px;
+margin-bottom: 72px;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: #2E2F42;
 }
+
 .information-list {
     display: flex;
     column-gap: 24px;
     row-gap: 48px;
-
 }
 
-.information-name {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-color: #2E2F42;
+.information-item {
+    gap: calc(100% - 72px) 4;
 }
 
 .information-title {
+margin-top: 32px;
+margin-bottom: 8px;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -214,11 +256,15 @@ color: #2E2F42;
 }
 
 .information-desc {
+margin-bottom: 32px;
+text-align: center;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 }
+
+/*-----------------------FOOTER-------------------------*/
 
 .footer {
     background-color: #2E2F42;
@@ -226,7 +272,23 @@ color: #434455;
     padding-bottom: 100px;
 }
 
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin: 0;
+    }
+
+.footer-logo-logo {
+    color: #f4f4fd;
+}
+
 .footer-text {
+margin-top: 16px;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -234,12 +296,14 @@ color: #E7E9FC;
 width: 264px;
 }  
 
+/*------------------PORTFOLIO--BOX-------------------------*/
+
 .box-list {
     display: flex;
     padding-top: 96px;
     padding-bottom: 72px;
     justify-content: center;
-   gap: 24px;
+    gap: 24px;
 
 }
 
@@ -261,20 +325,33 @@ cursor: pointer;
     background: #404BBF;
 }
 
-.information-list {
+/*------------------PORTFOLIO--PORTFOLIO-------------------------*/
+
+.portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
-.footer-logo {
-font-family: "Raleway", sans-serif;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.17;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #4d5ae5;
-margin: 0;
+  
+.portfolio-item {
+    gap: calc(100% - 48px) 3;
 }
-.haeder-logo-logo {
-    color: #f4f4fd;
+    
+.portfolio-title {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+    
+.portfolio-desc {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
