@@ -43,6 +43,7 @@ color: #434455;
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: ;
 }
 
 .header-container {
@@ -63,7 +64,6 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
 margin-right: 76px;
-margin-left: 156px;
 }
 
 .haeder-logo-log {
@@ -132,7 +132,7 @@ color: #434455;
 .hero {
     background-color: #2e2f42;
     padding-top: 188px;
-    padding-bottom: 188px;
+    margin-bottom: 188px;
     margin: 0 auto;
 }
 
@@ -153,8 +153,8 @@ color: #FFFFFF;
 }
 
 .btn {
-width: 169px;
-height: 56px;
+border: transparent;
+padding:  16px, 32px, 16px, 32px; 
 margin: 0 auto;
 font-family: inherit;
 font-weight: 500;
@@ -222,8 +222,13 @@ gap: 24px;
 
 /*---------------------INFORMATION----------------------*/
 
+.information {
+    background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .information-name {
-padding-top: 120px;
 margin-bottom: 72px;
 font-weight: 700;
 font-size: 36px;
@@ -244,8 +249,16 @@ color: #2E2F42;
     gap: calc(100% - 72px) 4;
 }
 
+.information-img {
+    display: block;
+}
+.information-container {
+    background-color: #FFFFFF;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .information-title {
-margin-top: 32px;
 margin-bottom: 8px;
 font-weight: 500;
 font-size: 20px;
@@ -256,7 +269,6 @@ color: #2E2F42;
 }
 
 .information-desc {
-margin-bottom: 32px;
 text-align: center;
 font-size: 16px;
 line-height: 1.5;
@@ -300,14 +312,14 @@ width: 264px;
 
 .box-list {
     display: flex;
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     justify-content: center;
     gap: 24px;
 
 }
 
 .box-link {
+padding: 12px 24px;
 font-family: inherit;
 font-weight: 500;
 font-size: 16px;
@@ -318,6 +330,7 @@ text-align: center;
 letter-spacing: 0.04em;
 color: #4D5AE5;
 cursor: pointer;
+border: transparent;
 }
 
 .box-link:is(:hover, :focus) {
@@ -338,8 +351,12 @@ cursor: pointer;
     gap: calc(100% - 48px) 3;
 }
     
+.portfolio-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: ;
+}
 .portfolio-title {
-    margin-top: 32px;
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
@@ -349,7 +366,6 @@ cursor: pointer;
 }
     
 .portfolio-desc {
-    margin-bottom: 32px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
