@@ -354,7 +354,7 @@ border: transparent;
 .portfolio-container {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: ;
+    border: transparent;
 }
 .portfolio-title {
     margin-bottom: 8px;
