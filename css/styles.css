@@ -43,7 +43,7 @@ color: #434455;
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: ;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
@@ -221,6 +221,10 @@ color: #2E2F42;
  .features-list {
 display: flex;
 gap: 24px;
+}
+
+.features-img {
+    display: block;
 }
 
 /*---------------------INFORMATION----------------------*/
